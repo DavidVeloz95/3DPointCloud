@@ -11,7 +11,7 @@ num_iterations = 1000
 # Global variables
 global pcd, downpcd
 # Change this directory to where the pcd is stored
-path_to_pcd = "data/sample_cloud.pcd"
+path_to_pcd = "data/HiL_Innen_subsampled - Cloud.pcd"
 #pcd = o3d.io.read_point_cloud("../../test_data/my_points.txt", format='xyz')
 pcd = o3d.io.read_point_cloud(path_to_pcd)
 downpcd = pcd.voxel_down_sample(voxel_size=voxel_sz)
